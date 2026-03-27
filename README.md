@@ -1,72 +1,83 @@
-# Milk Skills Library
+# Milk 技能庫
+此倉庫包含 Milk（OpenClaw 助手）已知的技能說明文件備份，供人工檢閱與參考。
 
-This repository contains a backup of all skills currently known to Milk (OpenClaw AI Assistant).
+## 技能分類索引
+### 核心工具
+* **[gemini](./gemini/SKILL.md)** — --- name: gemini
+* **[github](./github/SKILL.md)** — --- name: github
+* **[goplaces](./goplaces/SKILL.md)** — --- name: goplaces
+* **[mcporter](./mcporter/SKILL.md)** — --- name: mcporter
+* **[notion](./notion/SKILL.md)** — --- name: notion
+* **[summarize](./summarize/SKILL.md)** — --- name: summarize
+* **[weather](./weather/SKILL.md)** — --- name: weather
 
-## Skills Index
+### 開發與架構
+* **[coding-agent](./coding-agent/SKILL.md)** — --- name: coding-agent
+* **[dev-standards](./dev-standards/SKILL.md)** — Description: Enforce high-quality development standards including Unit Tests and Component Security. E2E Tests are optional.
+* **[diagram-gen](./diagram-gen/SKILL.md)** — --- name: diagram-gen
+* **[docker-compose-gen](./docker-compose-gen/SKILL.md)** — --- name: compose-gen
+* **[docker-to-k8s-manifests](./docker-to-k8s-manifests/SKILL.md)** — --- name: docker-to-k8s-manifests
+* **[fastapi-templates](./fastapi-templates/SKILL.md)** — --- name: fastapi-templates
+* **[gh-issues](./gh-issues/SKILL.md)** — --- name: gh-issues
 
-*   **[1password](./1password/SKILL.md)**: Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.
-*   **[agent-browser](./agent-browser/SKILL.md)**: Use agent-browser CLI to control a remote or local Chrome instance via CDP. Provides AI-friendly snapshots with @ref handles for precise interaction. Use when standard fetch or playwright tools are insufficient for complex UI automation.
-*   **[apple-notes](./apple-notes/SKILL.md)**: Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.
-*   **[apple-reminders](./apple-reminders/SKILL.md)**: Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.
-*   **[auth-auditor](./auth-auditor/SKILL.md)**: Audit your authentication implementation for security flaws. Use when you need to verify your auth is actually secure.
-*   **[aws-cost-finops](./aws-cost-finops/SKILL.md)**: AWS cost optimization and FinOps workflows. Use for finding unused resources, analyzing Reserved Instance opportunities, detecting cost anomalies, rightsizing instances, evaluating Spot instances, migrating to newer generation instances, implementing FinOps best practices, optimizing storage/network/database costs, and managing cloud financial operations. Includes automated analysis scripts and comprehensive reference documentation.
-*   **[backup-disaster-recovery](./backup-disaster-recovery/SKILL.md)**: >
-*   **[bear-notes](./bear-notes/SKILL.md)**: Create, search, and manage Bear notes via grizzly CLI.
-*   **[blogwatcher](./blogwatcher/SKILL.md)**: Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.
-*   **[blucli](./blucli/SKILL.md)**: BluOS CLI (blu) for discovery, playback, grouping, and volume.
-*   **[bluebubbles](./bluebubbles/SKILL.md)**: Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel="bluebubbles".
-*   **[camsnap](./camsnap/SKILL.md)**: Capture frames or clips from RTSP/ONVIF cameras.
-*   **[canvas](./canvas/SKILL.md)**: Display HTML content on connected OpenClaw nodes (Mac app, iOS, Android).
-*   **[clawhub](./clawhub/SKILL.md)**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.
-*   **[cloudflare-crawl](./cloudflare-crawl/SKILL.md)**: Use Cloudflare Browser Rendering API (Crawl) to fetch web pages, especially those requiring JS rendering. Use when you need to extract content from modern SPAs or sites with anti-bot protection that standard fetch tools can't handle.
-*   **[coding-agent](./coding-agent/SKILL.md)**: 'Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:"acp"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.'
-*   **[dev-standards](./dev-standards/SKILL.md)**: Description: Enforce high-quality development standards including Unit Tests and Component Security. E2E Tests are optional.
-*   **[diagram-gen](./diagram-gen/SKILL.md)**: Generate Mermaid diagrams from your codebase. Use when you need architecture visualizations.
-*   **[discord](./discord/SKILL.md)**: "Discord ops via the message tool (channel=discord)."
-*   **[docker-compose-gen](./docker-compose-gen/SKILL.md)**: Generate docker-compose.yml by scanning your project. Use when containerizing an existing app.
-*   **[docker-to-k8s-manifests](./docker-to-k8s-manifests/SKILL.md)**: Automatically generate optimized Kubernetes deployment manifests from Dockerfile and docker-compose configurations with proper resource limits and health checks.
-*   **[eightctl](./eightctl/SKILL.md)**: Control Eight Sleep pods (status, temperature, alarms, schedules).
-*   **[enterprise-security](./enterprise-security/SKILL.md)**: Central authority for Claude Code enterprise security. Covers enterprise managed policies (managed-settings.json), settings precedence hierarchy, policy file locations (macOS, Linux, Windows), unoverridable organizational policies, cloud execution security (isolated VMs, network access controls, credential protection), IDE security (VS Code, JetBrains), devcontainer security, and security best practices for teams. Assists with configuring enterprise policies, understanding precedence, and implementing organizational security standards. Delegates 100% to docs-management skill for official documentation.
-*   **[fastapi-templates](./fastapi-templates/SKILL.md)**: Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.
-*   **[find-skills](./find-skills/SKILL.md)**: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.
-*   **[gemini](./gemini/SKILL.md)**: Gemini CLI for one-shot Q&A, summaries, and generation.
-*   **[gh-issues](./gh-issues/SKILL.md)**: "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]"
-*   **[gifgrep](./gifgrep/SKILL.md)**: Search GIF providers with CLI/TUI, download results, and extract stills/sheets.
-*   **[github](./github/SKILL.md)**: "GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured."
-*   **[gog](./gog/SKILL.md)**: Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
-*   **[goplaces](./goplaces/SKILL.md)**: Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.
-*   **[healthcheck](./healthcheck/SKILL.md)**: Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).
-*   **[himalaya](./himalaya/SKILL.md)**: "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language)."
-*   **[imsg](./imsg/SKILL.md)**: iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.
-*   **[k8s-security-policies](./k8s-security-policies/SKILL.md)**: Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security standards.
-*   **[mcporter](./mcporter/SKILL.md)**: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
-*   **[model-usage](./model-usage/SKILL.md)**: Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.
-*   **[nano-pdf](./nano-pdf/SKILL.md)**: Edit PDFs with natural-language instructions using the nano-pdf CLI.
-*   **[node-connect](./node-connect/SKILL.md)**: Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.
-*   **[notion](./notion/SKILL.md)**: Notion API for creating and managing pages, databases, and blocks.
-*   **[obsidian](./obsidian/SKILL.md)**: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
-*   **[openai-whisper-api](./openai-whisper-api/SKILL.md)**: Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
-*   **[openai-whisper](./openai-whisper/SKILL.md)**: Local speech-to-text with the Whisper CLI (no API key).
-*   **[openhue](./openhue/SKILL.md)**: Control Philips Hue lights and scenes via the OpenHue CLI.
-*   **[oracle](./oracle/SKILL.md)**: Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).
-*   **[ordercli](./ordercli/SKILL.md)**: Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
-*   **[peekaboo](./peekaboo/SKILL.md)**: Capture and automate macOS UI with the Peekaboo CLI.
-*   **[pua-debugging](./pua-debugging/SKILL.md)**: "Forces exhaustive problem-solving with corporate PUA rhetoric. Trigger on: task failed 2+ times, about to give up, suggesting user do it manually, blaming environment unverified, stuck in loops, passive behavior, or user frustration ('try harder', 'figure it out', '换个方法', '为什么还不行'). ALL task types. Not for first failures."
-*   **[sag](./sag/SKILL.md)**: ElevenLabs text-to-speech with mac-style say UX.
-*   **[security-compliance](./security-compliance/SKILL.md)**: Guides security professionals in implementing defense-in-depth security architectures, achieving compliance with industry frameworks (SOC2, ISO27001, GDPR, HIPAA), conducting threat modeling and risk assessments, managing security operations and incident response, and embedding security throughout the SDLC.
-*   **[session-logs](./session-logs/SKILL.md)**: Search and analyze your own session logs (older/parent conversations) using jq.
-*   **[sherpa-onnx-tts](./sherpa-onnx-tts/SKILL.md)**: Local text-to-speech via sherpa-onnx (offline, no cloud)
-*   **[skill-creator](./skill-creator/SKILL.md)**: Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like "create a skill", "author a skill", "tidy up a skill", "improve this skill", "review the skill", "clean up the skill", "audit the skill".
-*   **[slack](./slack/SKILL.md)**: Use when you need to control Slack from OpenClaw via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.
-*   **[songsee](./songsee/SKILL.md)**: Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.
-*   **[sonoscli](./sonoscli/SKILL.md)**: Control Sonos speakers (discover/status/play/volume/group).
-*   **[spotify-player](./spotify-player/SKILL.md)**: Terminal Spotify playback/search via spogo (preferred) or spotify_player.
-*   **[summarize](./summarize/SKILL.md)**: Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).
-*   **[things-mac](./things-mac/SKILL.md)**: Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.
-*   **[tmux](./tmux/SKILL.md)**: Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.
-*   **[trello](./trello/SKILL.md)**: Manage Trello boards, lists, and cards via the Trello REST API.
-*   **[video-frames](./video-frames/SKILL.md)**: Extract frames or short clips from videos using ffmpeg.
-*   **[voice-call](./voice-call/SKILL.md)**: Start voice calls via the OpenClaw voice-call plugin.
-*   **[wacli](./wacli/SKILL.md)**: Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).
-*   **[weather](./weather/SKILL.md)**: "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed."
-*   **[xurl](./xurl/SKILL.md)**: A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint.
+### 網路與爬蟲
+* **[agent-browser](./agent-browser/SKILL.md)** — --- name: agent-browser
+* **[cloudflare-crawl](./cloudflare-crawl/SKILL.md)** — --- name: cloudflare-crawl
+* **[xurl](./xurl/SKILL.md)** — --- name: xurl
+
+### 安全與合規
+* **[1password](./1password/SKILL.md)** — --- name: 1password
+* **[auth-auditor](./auth-auditor/SKILL.md)** — --- name: auth-auditor
+* **[aws-cost-finops](./aws-cost-finops/SKILL.md)** — --- name: aws-cost-finops
+* **[backup-disaster-recovery](./backup-disaster-recovery/SKILL.md)** — --- name: backup-disaster-recovery
+* **[enterprise-security](./enterprise-security/SKILL.md)** — --- name: enterprise-security
+* **[healthcheck](./healthcheck/SKILL.md)** — --- name: healthcheck
+* **[k8s-security-policies](./k8s-security-policies/SKILL.md)** — --- name: k8s-security-policies
+* **[security-compliance](./security-compliance/SKILL.md)** — --- name: security-compliance
+
+### 媒體與通訊
+* **[apple-notes](./apple-notes/SKILL.md)** — --- name: apple-notes
+* **[apple-reminders](./apple-reminders/SKILL.md)** — --- name: apple-reminders
+* **[bear-notes](./bear-notes/SKILL.md)** — --- name: bear-notes
+* **[bluebubbles](./bluebubbles/SKILL.md)** — --- name: bluebubbles
+* **[openai-whisper](./openai-whisper/SKILL.md)** — --- name: openai-whisper
+* **[openai-whisper-api](./openai-whisper-api/SKILL.md)** — --- name: openai-whisper-api
+* **[sonoscli](./sonoscli/SKILL.md)** — --- name: sonoscli
+* **[spotify-player](./spotify-player/SKILL.md)** — --- name: spotify-player
+* **[voice-call](./voice-call/SKILL.md)** — --- name: voice-call
+
+### 自動化與管理
+* **[clawhub](./clawhub/SKILL.md)** — --- name: clawhub
+* **[find-skills](./find-skills/SKILL.md)** — --- name: find-skills
+* **[ordercli](./ordercli/SKILL.md)** — --- name: ordercli
+* **[session-logs](./session-logs/SKILL.md)** — --- name: session-logs
+* **[skill-creator](./skill-creator/SKILL.md)** — --- name: skill-creator
+
+### 其他
+* **[blogwatcher](./blogwatcher/SKILL.md)** — --- name: blogwatcher
+* **[blucli](./blucli/SKILL.md)** — --- name: blucli
+* **[camsnap](./camsnap/SKILL.md)** — --- name: camsnap
+* **[canvas](./canvas/SKILL.md)** — Display HTML content on connected OpenClaw nodes (Mac app, iOS, Android).
+* **[discord](./discord/SKILL.md)** — --- name: discord
+* **[eightctl](./eightctl/SKILL.md)** — --- name: eightctl
+* **[gifgrep](./gifgrep/SKILL.md)** — --- name: gifgrep
+* **[gog](./gog/SKILL.md)** — --- name: gog
+* **[himalaya](./himalaya/SKILL.md)** — --- name: himalaya
+* **[imsg](./imsg/SKILL.md)** — --- name: imsg
+* **[model-usage](./model-usage/SKILL.md)** — --- name: model-usage
+* **[nano-pdf](./nano-pdf/SKILL.md)** — --- name: nano-pdf
+* **[node-connect](./node-connect/SKILL.md)** — --- name: node-connect
+* **[obsidian](./obsidian/SKILL.md)** — --- name: obsidian
+* **[openhue](./openhue/SKILL.md)** — --- name: openhue
+* **[oracle](./oracle/SKILL.md)** — --- name: oracle
+* **[peekaboo](./peekaboo/SKILL.md)** — --- name: peekaboo
+* **[pua-debugging](./pua-debugging/SKILL.md)** — --- name: pua-debugging
+* **[sag](./sag/SKILL.md)** — --- name: sag
+* **[sherpa-onnx-tts](./sherpa-onnx-tts/SKILL.md)** — --- name: sherpa-onnx-tts
+* **[slack](./slack/SKILL.md)** — --- name: slack
+* **[songsee](./songsee/SKILL.md)** — --- name: songsee
+* **[things-mac](./things-mac/SKILL.md)** — --- name: things-mac
+* **[tmux](./tmux/SKILL.md)** — --- name: tmux
+* **[trello](./trello/SKILL.md)** — --- name: trello
+* **[video-frames](./video-frames/SKILL.md)** — --- name: video-frames
+* **[wacli](./wacli/SKILL.md)** — --- name: wacli

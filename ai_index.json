@@ -1,0 +1,400 @@
+{
+  "skills": [
+    {
+      "name": "1password",
+      "path": "./1password/SKILL.md",
+      "description": "--- name: 1password",
+      "category": "安全與合規"
+    },
+    {
+      "name": "agent-browser",
+      "path": "./agent-browser/SKILL.md",
+      "description": "--- name: agent-browser",
+      "category": "網路與爬蟲"
+    },
+    {
+      "name": "apple-notes",
+      "path": "./apple-notes/SKILL.md",
+      "description": "--- name: apple-notes",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "apple-reminders",
+      "path": "./apple-reminders/SKILL.md",
+      "description": "--- name: apple-reminders",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "auth-auditor",
+      "path": "./auth-auditor/SKILL.md",
+      "description": "--- name: auth-auditor",
+      "category": "安全與合規"
+    },
+    {
+      "name": "aws-cost-finops",
+      "path": "./aws-cost-finops/SKILL.md",
+      "description": "--- name: aws-cost-finops",
+      "category": "安全與合規"
+    },
+    {
+      "name": "backup-disaster-recovery",
+      "path": "./backup-disaster-recovery/SKILL.md",
+      "description": "--- name: backup-disaster-recovery",
+      "category": "安全與合規"
+    },
+    {
+      "name": "bear-notes",
+      "path": "./bear-notes/SKILL.md",
+      "description": "--- name: bear-notes",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "blogwatcher",
+      "path": "./blogwatcher/SKILL.md",
+      "description": "--- name: blogwatcher",
+      "category": "其他"
+    },
+    {
+      "name": "blucli",
+      "path": "./blucli/SKILL.md",
+      "description": "--- name: blucli",
+      "category": "其他"
+    },
+    {
+      "name": "bluebubbles",
+      "path": "./bluebubbles/SKILL.md",
+      "description": "--- name: bluebubbles",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "camsnap",
+      "path": "./camsnap/SKILL.md",
+      "description": "--- name: camsnap",
+      "category": "其他"
+    },
+    {
+      "name": "canvas",
+      "path": "./canvas/SKILL.md",
+      "description": "Display HTML content on connected OpenClaw nodes (Mac app, iOS, Android).",
+      "category": "其他"
+    },
+    {
+      "name": "clawhub",
+      "path": "./clawhub/SKILL.md",
+      "description": "--- name: clawhub",
+      "category": "自動化與管理"
+    },
+    {
+      "name": "cloudflare-crawl",
+      "path": "./cloudflare-crawl/SKILL.md",
+      "description": "--- name: cloudflare-crawl",
+      "category": "網路與爬蟲"
+    },
+    {
+      "name": "coding-agent",
+      "path": "./coding-agent/SKILL.md",
+      "description": "--- name: coding-agent",
+      "category": "開發與架構"
+    },
+    {
+      "name": "dev-standards",
+      "path": "./dev-standards/SKILL.md",
+      "description": "Description: Enforce high-quality development standards including Unit Tests and Component Security. E2E Tests are optional.",
+      "category": "開發與架構"
+    },
+    {
+      "name": "diagram-gen",
+      "path": "./diagram-gen/SKILL.md",
+      "description": "--- name: diagram-gen",
+      "category": "開發與架構"
+    },
+    {
+      "name": "discord",
+      "path": "./discord/SKILL.md",
+      "description": "--- name: discord",
+      "category": "其他"
+    },
+    {
+      "name": "docker-compose-gen",
+      "path": "./docker-compose-gen/SKILL.md",
+      "description": "--- name: compose-gen",
+      "category": "開發與架構"
+    },
+    {
+      "name": "docker-to-k8s-manifests",
+      "path": "./docker-to-k8s-manifests/SKILL.md",
+      "description": "--- name: docker-to-k8s-manifests",
+      "category": "開發與架構"
+    },
+    {
+      "name": "eightctl",
+      "path": "./eightctl/SKILL.md",
+      "description": "--- name: eightctl",
+      "category": "其他"
+    },
+    {
+      "name": "enterprise-security",
+      "path": "./enterprise-security/SKILL.md",
+      "description": "--- name: enterprise-security",
+      "category": "安全與合規"
+    },
+    {
+      "name": "fastapi-templates",
+      "path": "./fastapi-templates/SKILL.md",
+      "description": "--- name: fastapi-templates",
+      "category": "開發與架構"
+    },
+    {
+      "name": "find-skills",
+      "path": "./find-skills/SKILL.md",
+      "description": "--- name: find-skills",
+      "category": "自動化與管理"
+    },
+    {
+      "name": "gemini",
+      "path": "./gemini/SKILL.md",
+      "description": "--- name: gemini",
+      "category": "核心工具"
+    },
+    {
+      "name": "gh-issues",
+      "path": "./gh-issues/SKILL.md",
+      "description": "--- name: gh-issues",
+      "category": "開發與架構"
+    },
+    {
+      "name": "gifgrep",
+      "path": "./gifgrep/SKILL.md",
+      "description": "--- name: gifgrep",
+      "category": "其他"
+    },
+    {
+      "name": "github",
+      "path": "./github/SKILL.md",
+      "description": "--- name: github",
+      "category": "核心工具"
+    },
+    {
+      "name": "gog",
+      "path": "./gog/SKILL.md",
+      "description": "--- name: gog",
+      "category": "其他"
+    },
+    {
+      "name": "goplaces",
+      "path": "./goplaces/SKILL.md",
+      "description": "--- name: goplaces",
+      "category": "核心工具"
+    },
+    {
+      "name": "healthcheck",
+      "path": "./healthcheck/SKILL.md",
+      "description": "--- name: healthcheck",
+      "category": "安全與合規"
+    },
+    {
+      "name": "himalaya",
+      "path": "./himalaya/SKILL.md",
+      "description": "--- name: himalaya",
+      "category": "其他"
+    },
+    {
+      "name": "imsg",
+      "path": "./imsg/SKILL.md",
+      "description": "--- name: imsg",
+      "category": "其他"
+    },
+    {
+      "name": "k8s-security-policies",
+      "path": "./k8s-security-policies/SKILL.md",
+      "description": "--- name: k8s-security-policies",
+      "category": "安全與合規"
+    },
+    {
+      "name": "mcporter",
+      "path": "./mcporter/SKILL.md",
+      "description": "--- name: mcporter",
+      "category": "核心工具"
+    },
+    {
+      "name": "model-usage",
+      "path": "./model-usage/SKILL.md",
+      "description": "--- name: model-usage",
+      "category": "其他"
+    },
+    {
+      "name": "nano-pdf",
+      "path": "./nano-pdf/SKILL.md",
+      "description": "--- name: nano-pdf",
+      "category": "其他"
+    },
+    {
+      "name": "node-connect",
+      "path": "./node-connect/SKILL.md",
+      "description": "--- name: node-connect",
+      "category": "其他"
+    },
+    {
+      "name": "notion",
+      "path": "./notion/SKILL.md",
+      "description": "--- name: notion",
+      "category": "核心工具"
+    },
+    {
+      "name": "obsidian",
+      "path": "./obsidian/SKILL.md",
+      "description": "--- name: obsidian",
+      "category": "其他"
+    },
+    {
+      "name": "openai-whisper",
+      "path": "./openai-whisper/SKILL.md",
+      "description": "--- name: openai-whisper",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "openai-whisper-api",
+      "path": "./openai-whisper-api/SKILL.md",
+      "description": "--- name: openai-whisper-api",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "openhue",
+      "path": "./openhue/SKILL.md",
+      "description": "--- name: openhue",
+      "category": "其他"
+    },
+    {
+      "name": "oracle",
+      "path": "./oracle/SKILL.md",
+      "description": "--- name: oracle",
+      "category": "其他"
+    },
+    {
+      "name": "ordercli",
+      "path": "./ordercli/SKILL.md",
+      "description": "--- name: ordercli",
+      "category": "自動化與管理"
+    },
+    {
+      "name": "peekaboo",
+      "path": "./peekaboo/SKILL.md",
+      "description": "--- name: peekaboo",
+      "category": "其他"
+    },
+    {
+      "name": "pua-debugging",
+      "path": "./pua-debugging/SKILL.md",
+      "description": "--- name: pua-debugging",
+      "category": "其他"
+    },
+    {
+      "name": "sag",
+      "path": "./sag/SKILL.md",
+      "description": "--- name: sag",
+      "category": "其他"
+    },
+    {
+      "name": "security-compliance",
+      "path": "./security-compliance/SKILL.md",
+      "description": "--- name: security-compliance",
+      "category": "安全與合規"
+    },
+    {
+      "name": "session-logs",
+      "path": "./session-logs/SKILL.md",
+      "description": "--- name: session-logs",
+      "category": "自動化與管理"
+    },
+    {
+      "name": "sherpa-onnx-tts",
+      "path": "./sherpa-onnx-tts/SKILL.md",
+      "description": "--- name: sherpa-onnx-tts",
+      "category": "其他"
+    },
+    {
+      "name": "skill-creator",
+      "path": "./skill-creator/SKILL.md",
+      "description": "--- name: skill-creator",
+      "category": "自動化與管理"
+    },
+    {
+      "name": "slack",
+      "path": "./slack/SKILL.md",
+      "description": "--- name: slack",
+      "category": "其他"
+    },
+    {
+      "name": "songsee",
+      "path": "./songsee/SKILL.md",
+      "description": "--- name: songsee",
+      "category": "其他"
+    },
+    {
+      "name": "sonoscli",
+      "path": "./sonoscli/SKILL.md",
+      "description": "--- name: sonoscli",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "spotify-player",
+      "path": "./spotify-player/SKILL.md",
+      "description": "--- name: spotify-player",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "summarize",
+      "path": "./summarize/SKILL.md",
+      "description": "--- name: summarize",
+      "category": "核心工具"
+    },
+    {
+      "name": "things-mac",
+      "path": "./things-mac/SKILL.md",
+      "description": "--- name: things-mac",
+      "category": "其他"
+    },
+    {
+      "name": "tmux",
+      "path": "./tmux/SKILL.md",
+      "description": "--- name: tmux",
+      "category": "其他"
+    },
+    {
+      "name": "trello",
+      "path": "./trello/SKILL.md",
+      "description": "--- name: trello",
+      "category": "其他"
+    },
+    {
+      "name": "video-frames",
+      "path": "./video-frames/SKILL.md",
+      "description": "--- name: video-frames",
+      "category": "其他"
+    },
+    {
+      "name": "voice-call",
+      "path": "./voice-call/SKILL.md",
+      "description": "--- name: voice-call",
+      "category": "媒體與通訊"
+    },
+    {
+      "name": "wacli",
+      "path": "./wacli/SKILL.md",
+      "description": "--- name: wacli",
+      "category": "其他"
+    },
+    {
+      "name": "weather",
+      "path": "./weather/SKILL.md",
+      "description": "--- name: weather",
+      "category": "核心工具"
+    },
+    {
+      "name": "xurl",
+      "path": "./xurl/SKILL.md",
+      "description": "--- name: xurl",
+      "category": "網路與爬蟲"
+    }
+  ]
+}
