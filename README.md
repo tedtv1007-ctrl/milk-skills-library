@@ -1,108 +1,108 @@
-﻿# Milk Skills Library
+﻿# Milk Skills Library | Gemini CLI 技能庫
 
-Collection of Gemini CLI skills.
+這裡收集了從系統及各個專案中整合而來的 Gemini CLI 技能 (Skills)。這些技能可以幫助 AI 代理更有效地處理特定領域的任務。
 
-## Available Skills
+## 快速導覽 (Available Skills)
 
-1password
-- agent-browser
-- ansible-coder
-- api-design
-- api-gateway
-- apple-notes
-- apple-reminders
-- auth-auditor
-- aws-cost-finops
-- backend-testing
-- backup-disaster-recovery
-- bear-notes
-- blogwatcher
-- blucli
-- bluebubbles
-- camsnap
-- canvas
-- clawhub
-- cloudflare-crawl
-- code-review
-- coding-agent
-- dev-standards
-- devops
-- diagram-gen
-- discord
-- docker
-- docker-compose-gen
-- docker-compose-orchestration
-- docker-to-k8s-manifests
-- dotnet-release-management
-- eightctl
-- enterprise-internal-pki-manager
-- enterprise-security
-- fastapi
-- fastapi-templates
-- find-skills
-- fluentui-blazor
-- gemini
-- gh-issues
-- gifgrep
-- github
-- gog
-- goplaces
-- healthcheck
-- himalaya
-- imsg
-- insecure-defaults
-- k8s-security-policies
-- kubernetes
-- kubernetes-ops
-- mcporter
-- model-usage
-- monitoring-observability
-- mudblazor
-- nano-pdf
-- net-conventions
-- node-connect
-- notion
-- obsidian
-- openai-whisper
-- openai-whisper-api
-- openhue
-- oracle
-- ordercli
-- peekaboo
-- playwright-blazor-testing
-- playwright-testing
-- postgresql-optimization
-- powershell-7-expert
-- powershell-windows
-- pua-debugging
-- python-project-structure
-- radzen-blazor
-- sag
-- security-audit
-- security-compliance
-- session-logs
-- sherpa-onnx-tts
-- skill-creator
-- slack
-- songsee
-- sonoscli
-- spotify-player
-- summarize
-- test-driven-development
-- things-mac
-- tmux
-- trello
-- understand
-- understand-chat
-- understand-dashboard
-- understand-diff
-- understand-explain
-- understand-onboard
-- verification-before-completion
-- video-frames
-- voice-call
-- wacli
-- weather
-- web-design-guidelines
-- xurl
+- **1password**: Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.
+- **agent-browser**: Use agent-browser CLI to control a remote or local Chrome instance via CDP. Provides AI-friendly snapshots with @ref handles for precise interaction. Use when standard fetch or playwright tools are insufficient for complex UI automation.
+- **ansible-coder**: This skill guides writing Ansible playbooks for server configuration. Use when hardening servers, installing packages, or automating post-provisioning tasks that cloud-init cannot handle.
+- **api-design**: REST API design principles ??resource naming, error handling, versioning, pagination
+- **api-gateway**: |
+- **apple-notes**: Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.
+- **apple-reminders**: Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.
+- **auth-auditor**: Audit your authentication implementation for security flaws. Use when you need to verify your auth is actually secure.
+- **aws-cost-finops**: AWS cost optimization and FinOps workflows. Use for finding unused resources, analyzing Reserved Instance opportunities, detecting cost anomalies, rightsizing instances, evaluating Spot instances, migrating to newer generation instances, implementing FinOps best practices, optimizing storage/network/database costs, and managing cloud financial operations. Includes automated analysis scripts and comprehensive reference documentation.
+- **backend-testing**: Backend API testing with unit tests and integration tests
+- **backup-disaster-recovery**: >
+- **bear-notes**: Create, search, and manage Bear notes via grizzly CLI.
+- **blogwatcher**: Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.
+- **blucli**: BluOS CLI (blu) for discovery, playback, grouping, and volume.
+- **bluebubbles**: Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel="bluebubbles".
+- **camsnap**: Capture frames or clips from RTSP/ONVIF cameras.
+- **canvas**: 
+- **clawhub**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.
+- **cloudflare-crawl**: Use Cloudflare Browser Rendering API (Crawl) to fetch web pages, especially those requiring JS rendering. Use when you need to extract content from modern SPAs or sites with anti-bot protection that standard fetch tools can't handle.
+- **code-review**: Code review checklist for .NET web APIs ??covers security, performance, design, and testing
+- **coding-agent**: 'Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:"acp"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.'
+- **dev-standards**: Description: Enforce high-quality development standards including Unit Tests and Component Security. E2E Tests are optional.
+- **devops**: Deploy to Cloudflare (Workers, R2, D1), Docker, GCP (Cloud Run, GKE), Kubernetes (kubectl, Helm). Use for serverless, containers, CI/CD, GitOps, security audit.
+- **diagram-gen**: Generate Mermaid diagrams from your codebase. Use when you need architecture visualizations.
+- **discord**: "Discord ops via the message tool (channel=discord)."
+- **docker**: Docker containerization for packaging applications with dependencies into isolated, portable units ensuring consistency across development, testing, and production environments.
+- **docker-compose-gen**: Generate docker-compose.yml by scanning your project. Use when containerizing an existing app.
+- **docker-compose-orchestration**: 
+- **docker-to-k8s-manifests**: Automatically generate optimized Kubernetes deployment manifests from Dockerfile and docker-compose configurations with proper resource limits and health checks.
+- **dotnet-release-management**: "Managing .NET release lifecycle. NBGV versioning, SemVer, changelogs, pre-release, branching."
+- **eightctl**: Control Eight Sleep pods (status, temperature, alarms, schedules).
+- **enterprise-internal-pki-manager**: >
+- **enterprise-security**: Central authority for Claude Code enterprise security. Covers enterprise managed policies (managed-settings.json), settings precedence hierarchy, policy file locations (macOS, Linux, Windows), unoverridable organizational policies, cloud execution security (isolated VMs, network access controls, credential protection), IDE security (VS Code, JetBrains), devcontainer security, and security best practices for teams. Assists with configuring enterprise policies, understanding precedence, and implementing organizational security standards. Delegates 100% to docs-management skill for official documentation.
+- **fastapi**: REST API and WebSocket development with FastAPI emphasizing security, performance, and async patterns
+- **fastapi-templates**: Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.
+- **find-skills**: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.
+- **fluentui-blazor**: >
+- **gemini**: Gemini CLI for one-shot Q&A, summaries, and generation.
+- **gh-issues**: "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]"
+- **gifgrep**: Search GIF providers with CLI/TUI, download results, and extract stills/sheets.
+- **github**: "GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured."
+- **gog**: Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
+- **goplaces**: Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.
+- **healthcheck**: Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).
+- **himalaya**: "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language)."
+- **imsg**: iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.
+- **insecure-defaults**: |
+- **k8s-security-policies**: Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security standards.
+- **kubernetes**: Expert in Kubernetes and DevOps with infrastructure-as-code and cloud-native patterns
+- **kubernetes-ops**: Deploy, scale, and manage Kubernetes workloads. Create deployments, services, and configurations, manage cluster resources, troubleshoot pods, and implement production-ready Kubernetes patterns. Use when working with Kubernetes clusters, K8s deployments, or container orchestration.
+- **mcporter**: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **model-usage**: Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.
+- **monitoring-observability**: Set up monitoring, logging, and observability for applications and infrastructure. Use when implementing health checks, metrics collection, log aggregation, or alerting systems. Handles Prometheus, Grafana, ELK Stack, Datadog, and monitoring best practices.
+- **mudblazor**: |
+- **nano-pdf**: Edit PDFs with natural-language instructions using the nano-pdf CLI.
+- **net-conventions**: |
+- **node-connect**: Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.
+- **notion**: Notion API for creating and managing pages, databases, and blocks.
+- **obsidian**: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
+- **openai-whisper**: Local speech-to-text with the Whisper CLI (no API key).
+- **openai-whisper-api**: Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
+- **openhue**: Control Philips Hue lights and scenes via the OpenHue CLI.
+- **oracle**: Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).
+- **ordercli**: Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
+- **peekaboo**: Capture and automate macOS UI with the Peekaboo CLI.
+- **playwright-blazor-testing**: Write UI tests for Blazor applications (Server or WebAssembly) using Playwright. Covers navigation, interaction, authentication, selectors, and common Blazor-specific patterns.
+- **playwright-testing**: Browser automation and E2E testing with Playwright - 70+ production-tested patterns
+- **postgresql-optimization**: 'PostgreSQL-specific development assistant focusing on unique PostgreSQL features, advanced data types, and PostgreSQL-exclusive capabilities. Covers JSONB operations, array types, custom types, range/geometric types, full-text search, window functions, and PostgreSQL extensions ecosystem.'
+- **powershell-7-expert**: Expert in modern, cross-platform PowerShell Core. Specializes in Linux/macOS automation, parallel processing, REST API integration, and modern scripting patterns. Use for cross-platform automation and modern PowerShell features. Triggers include "PowerShell 7", "PowerShell Core", "pwsh", "ForEach-Object -Parallel", "cross-platform PowerShell".
+- **powershell-windows**: "PowerShell Windows patterns. Critical pitfalls, operator syntax, error handling."
+- **pua-debugging**: "Forces exhaustive problem-solving with corporate PUA rhetoric. Trigger on: task failed 2+ times, about to give up, suggesting user do it manually, blaming environment unverified, stuck in loops, passive behavior, or user frustration ('try harder', 'figure it out', '?Ｖ葵?寞?', '銝箔?銋?銝?'). ALL task types. Not for first failures."
+- **python-project-structure**: Python project organization, module architecture, and public API design. Use when setting up new projects, organizing modules, defining public interfaces with __all__, or planning directory layouts.
+- **radzen-blazor**: >
+- **sag**: ElevenLabs text-to-speech with mac-style say UX.
+- **security-audit**: Security audit checklist for PKI and web API systems based on OWASP Top 10 and Sentry find-bugs methodology
+- **security-compliance**: Guides security professionals in implementing defense-in-depth security architectures, achieving compliance with industry frameworks (SOC2, ISO27001, GDPR, HIPAA), conducting threat modeling and risk assessments, managing security operations and incident response, and embedding security throughout the SDLC.
+- **session-logs**: Search and analyze your own session logs (older/parent conversations) using jq.
+- **sherpa-onnx-tts**: Local text-to-speech via sherpa-onnx (offline, no cloud)
+- **skill-creator**: Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like "create a skill", "author a skill", "tidy up a skill", "improve this skill", "review the skill", "clean up the skill", "audit the skill".
+- **slack**: Use when you need to control Slack from OpenClaw via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.
+- **songsee**: Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.
+- **sonoscli**: Control Sonos speakers (discover/status/play/volume/group).
+- **spotify-player**: Terminal Spotify playback/search via spogo (preferred) or spotify_player.
+- **summarize**: Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for ?ranscribe this YouTube/video??.
+- **test-driven-development**: Write tests before implementing code using Red-Green-Refactor cycle
+- **things-mac**: Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.
+- **tmux**: Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.
+- **trello**: Manage Trello boards, lists, and cards via the Trello REST API.
+- **understand**: Analyze a codebase to produce an interactive knowledge graph for understanding architecture, components, and relationships
+- **understand-chat**: Use when you need to ask questions about a codebase or understand code using a knowledge graph
+- **understand-dashboard**: Launch the interactive web dashboard to visualize a codebase's knowledge graph
+- **understand-diff**: Use when you need to analyze git diffs or pull requests to understand what changed, affected components, and risks
+- **understand-explain**: Use when you need a deep-dive explanation of a specific file, function, or module in the codebase
+- **understand-onboard**: Use when you need to generate an onboarding guide for new team members joining a project
+- **verification-before-completion**: Never claim completion without running verification ??evidence before claims, always
+- **video-frames**: Extract frames or short clips from videos using ffmpeg.
+- **voice-call**: Start voice calls via the OpenClaw voice-call plugin.
+- **wacli**: Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).
+- **weather**: "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed."
+- **web-design-guidelines**: Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
+- **xurl**: A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint.
 
